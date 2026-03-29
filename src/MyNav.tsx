@@ -5,7 +5,7 @@ import About from "./About";
 export default function MyNav() {
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/react-navigation">
             <SetNav></SetNav>
             <Routes>
                 <Route path="/home" element={<Home/>}/>
