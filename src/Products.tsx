@@ -1,4 +1,4 @@
-
+import classes from "./Products.module.css";
 interface Product {
     name: string,
     type: string,
@@ -23,10 +23,7 @@ const PRODUCTS: Product[] = [{
 ];
 export default function Products() {
     return (
-        <table style={{
-            border: "solid white 1px", borderRadius: "0.25rem", width: "fit-content",
-            margin: "0 auto"
-        }}>
+        <table className={classes.table}>
             <thead>
                 <tr>
                     <th>#</th>
