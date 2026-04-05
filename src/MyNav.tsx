@@ -1,6 +1,7 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router";
 import Home from "./Home";
 import About from "./About";
+import Products from "./Products";
 
 export default function MyNav() {
 
@@ -10,6 +11,7 @@ export default function MyNav() {
             <Routes>
                 <Route path="/home" element={<Home/>}/>
                 <Route path="/about" element={<About/>}/>
+                <Route path="/products" element={<Products/>}/>
             </Routes>
         </BrowserRouter>
     )
@@ -18,10 +20,18 @@ export default function MyNav() {
 
 function SetNav() {
     return (
-        <nav>
-            <ul>
+        <nav style={{
+            display: "flex",
+            justifyContent: "center",
+        }}>
+            <ul style={{
+                display: "flex",
+                justifyContent: "space-evenly",
+                flex: 1
+            }}>
                 <li><Link to="/home">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
+                <li><Link to="/products">Products</Link></li>
             </ul>
         </nav>
     );
