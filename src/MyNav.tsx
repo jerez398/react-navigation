@@ -10,7 +10,7 @@ export default function MyNav() {
         <BrowserRouter basename="/react-navigation">
             <SetNav></SetNav>
             <Routes>
-                <Route path="/home" element={<Home />} />
+                <Route path="/home" element={<Home />} index />
                 <Route path="/about" element={<About />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="form" element={<MyForm />} />
