@@ -1,4 +1,4 @@
-import classes from "./Products.module.css";
+import { Table } from "react-bootstrap";
 interface Product {
     name: string,
     type: string,
@@ -23,7 +23,7 @@ const PRODUCTS: Product[] = [{
 ];
 export default function Products() {
     return (
-        <table className={classes.table}>
+        <Table striped bordered hover>
             <thead>
                 <tr>
                     <th>#</th>
@@ -42,5 +42,5 @@ export default function Products() {
                     </tr>
                 ))}
             </tbody>
-        </table>);
+        </Table>);
 }

@@ -1,17 +1,16 @@
-import { Button, Form, InputGroup } from "react-bootstrap";
+import { Button, Container, Form, InputGroup } from "react-bootstrap";
 
 export default function MyForm() {
     return (
         <Form
             className="w-50 mx-auto"
-            style={{ border: "1px solid gray", borderRadius: ".25rem", padding: "16px" }}
             onSubmit={(e) => e.preventDefault()}
         >
             <Form.Group className="mb-3">
                 <Form.Label>Product Name</Form.Label>
                 <Form.Control placeholder="Enter name"></Form.Control>
             </Form.Group>
-            <Form.Group>
+            <Form.Group className="mb-3">
                 <Form.Label>Product Type</Form.Label>
                 <Form.Select aria-label="Default">
                     <option>Default</option>
